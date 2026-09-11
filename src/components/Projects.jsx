@@ -34,7 +34,7 @@ function Projects() {
 
       <div className="section-heading">
         <p>03</p>
-        <h2>SELECTED PROJECTS</h2>
+        <h2> PROJECTS</h2>
       </div>
 
 

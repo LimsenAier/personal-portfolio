@@ -161,6 +161,8 @@ button {
   min-width: 145px;
   padding: 14px 22px;
 
+  border-radius: 16px;
+
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 1.5px;
@@ -306,13 +308,31 @@ button {
   display: flex;
   flex-direction: column;
 
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  background: #101719;
+  overflow: hidden;
+
+  border: 1px solid rgba(174, 224, 224, 0.12);
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.035);
+
+  box-shadow:
+    0 10px 35px rgba(0, 0, 0, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.035);
+
+  transition: 0.3s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(174, 224, 224, 0.28);
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow:
+    0 16px 42px rgba(0, 0, 0, 0.24),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
 }
 
 .about-card > div {
   padding: 28px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
 }
 
 .about-card > div:last-child {
@@ -351,15 +371,25 @@ button {
   min-height: 240px;
   padding: 30px;
 
-  background: #101719;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(174, 224, 224, 0.12);
+  border-radius: 28px;
 
-  transition: 0.25s ease;
+  background: rgba(255, 255, 255, 0.035);
+
+  box-shadow:
+    0 10px 35px rgba(0, 0, 0, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.035);
+
+  transition: 0.3s ease;
 }
 
 .skill-card:hover {
-  border-color: rgba(174, 224, 224, 0.3);
-  transform: translateY(-3px);
+  border-color: rgba(174, 224, 224, 0.28);
+  background: rgba(255, 255, 255, 0.05);
+  transform: translateY(-4px);
+  box-shadow:
+    0 16px 42px rgba(0, 0, 0, 0.24),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
 }
 
 .skill-card > span {
@@ -383,8 +413,9 @@ button {
 .skill-item {
   padding: 9px 13px;
 
-  border: 1px solid #29393b;
-  background: #0c1213;
+  border: 1px solid rgba(174, 224, 224, 0.12);
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.16);
 
   font-size: 12px;
   color: #c6d0d1;
@@ -414,25 +445,45 @@ button {
 
   min-height: 310px;
 
-  background: #101719;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+
+  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid rgba(174, 224, 224, 0.12);
+  border-radius: 30px;
+
+  box-shadow:
+    0 10px 35px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.035);
 
   transition: 0.3s ease;
 }
 
 .project-card:hover {
-  border-color: rgba(174, 224, 224, 0.3);
-  transform: translateY(-3px);
+  border-color: rgba(174, 224, 224, 0.28);
+  background: rgba(255, 255, 255, 0.05);
+  transform: translateY(-5px);
+  box-shadow:
+    0 18px 48px rgba(0, 0, 0, 0.28),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
 }
 
 .project-number {
-  padding: 35px;
+  margin: 28px;
+  padding: 14px 12px;
+  width: 48px;
+  height: 48px;
 
-  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(174, 224, 224, 0.16);
+  border-radius: 16px;
+  background: rgba(174, 224, 224, 0.06);
+
+  font-size: 12px;
   font-weight: 700;
-  color: #668486;
-
-  border-right: 1px solid rgba(255, 255, 255, 0.08);
+  color: #aee0e0;
 }
 
 .project-info {
@@ -475,12 +526,16 @@ button {
 }
 
 .project-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
   margin-top: 28px;
+  padding: 12px 18px;
 
-  padding: 11px 18px;
-
-  background: transparent;
-  border: 1px solid #415759;
+  background: rgba(174, 224, 224, 0.05);
+  border: 1px solid rgba(174, 224, 224, 0.18);
+  border-radius: 15px;
 
   color: #bcd0d1;
 
@@ -494,8 +549,10 @@ button {
 }
 
 .project-button:hover {
+  background: rgba(174, 224, 224, 0.12);
   border-color: #aee0e0;
   color: #aee0e0;
+  transform: translateY(-2px);
 }
 
 
@@ -507,8 +564,23 @@ button {
   display: grid;
   grid-template-columns: 180px 1fr;
 
-  background: #101719;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+
+  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid rgba(174, 224, 224, 0.12);
+  border-radius: 28px;
+
+  box-shadow:
+    0 10px 35px rgba(0, 0, 0, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.035);
+
+  transition: 0.3s ease;
+}
+
+.education-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(174, 224, 224, 0.28);
+  background: rgba(255, 255, 255, 0.05);
 }
 
 .education-year {
@@ -636,7 +708,9 @@ button {
 .contact-links a {
   padding: 13px 22px;
 
-  border: 1px solid #36494b;
+  border: 1px solid rgba(174, 224, 224, 0.16);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.03);
 
   font-size: 11px;
   font-weight: 700;
@@ -648,8 +722,10 @@ button {
 }
 
 .contact-links a:hover {
+  background: rgba(174, 224, 224, 0.08);
   border-color: #aee0e0;
   color: #aee0e0;
+  transform: translateY(-2px);
 }
 
 .copyright {
@@ -828,10 +904,14 @@ button {
   }
 
   .project-number {
-    padding: 20px 25px;
+    margin: 20px 25px 0;
+    padding: 0;
+
+    width: 48px;
+    height: 48px;
 
     border-right: none;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    border-bottom: none;
   }
 
   .project-info {
@@ -1003,7 +1083,15 @@ button {
 
   margin-top: 50px;
 
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+
+  border: 1px solid rgba(174, 224, 224, 0.12);
+  border-radius: 26px;
+  background: rgba(255, 255, 255, 0.025);
+
+  box-shadow:
+    0 10px 35px rgba(0, 0, 0, 0.16),
+    inset 0 1px 0 rgba(255, 255, 255, 0.03);
 }
 
 
@@ -1079,7 +1167,14 @@ button {
 
   margin-top: 40px;
 
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+
+  border: 1px solid rgba(174, 224, 224, 0.12);
+  border-radius: 26px;
+
+  box-shadow:
+    0 10px 35px rgba(0, 0, 0, 0.16),
+    inset 0 1px 0 rgba(255, 255, 255, 0.03);
 }
 
 
@@ -1088,10 +1183,10 @@ button {
 
   padding: 30px;
 
-  border-right: 1px solid rgba(255, 255, 255, 0.08);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  border-right: 1px solid rgba(255, 255, 255, 0.07);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
 
-  background: #101719;
+  background: rgba(255, 255, 255, 0.035);
 }
 
 
@@ -1141,12 +1236,21 @@ button {
 .technology-list span {
   padding: 12px 16px;
 
-  border: 1px solid #304345;
-  background: #101719;
+  border: 1px solid rgba(174, 224, 224, 0.12);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.035);
 
   font-size: 11px;
 
   color: #c5d1d1;
+
+  transition: 0.25s ease;
+}
+
+.technology-list span:hover {
+  border-color: rgba(174, 224, 224, 0.28);
+  background: rgba(174, 224, 224, 0.06);
+  color: #aee0e0;
 }
 
 

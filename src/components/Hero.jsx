@@ -10,8 +10,8 @@ function Hero() {
 
         <h1>
           I'M <span>LIMSEN.</span>
-          <br />
-          I BUILD & EXPLORE.
+          <br />dfngmm
+      
         </h1>
 
         <p className="hero-description">
